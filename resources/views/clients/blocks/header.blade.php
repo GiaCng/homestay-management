@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <!-- Flaticon -->
     <link rel="stylesheet" href="{{ asset('clients/assets/css/flaticon.min.css') }}">
     <!-- Font Awesome -->
@@ -79,7 +80,7 @@
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
                                         <li class=" current"><a href="{{ route('home') }}">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="{{ route('about') }}">About</a></li>
                                         <li class="dropdown"><a href="#">Tours</a>
                                             <ul>
 
@@ -89,21 +90,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('destination') }}">Destinations</a></li>
-                                        <li class="dropdown"><a href="#">Pages</a>
-                                            <ul>
-
-                                                <li><a href="#">faqs</a></li>
-
-                                                <li><a href="{{ route('contact') }}">Contact Us</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">blog List</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                                        <li><a href="{{route('blogs') }}}">blog</a></li>
                                     </ul>
                                 </div>
 

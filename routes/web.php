@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\clients\AboutController;
+use App\Http\Controllers\clients\BlogController;
+use App\Http\Controllers\clients\BlogDetailController;
 use App\Http\Controllers\clients\BookingController;
 use App\Http\Controllers\clients\ContactController;
 use App\Http\Controllers\clients\DestinationController;
@@ -31,3 +33,5 @@ Route::get('/destination', [DestinationController::class, 'index'])->name('desti
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 Route::get('/travel-guides', [TravelGuidesController::class, 'index'])->name('team');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
+Route::get('/blog-detail', [BlogDetailController::class, 'index'])->name('blog-detail');

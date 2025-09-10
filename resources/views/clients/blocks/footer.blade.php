@@ -135,10 +135,10 @@
     </div>
     <!--End pagewrapper-->
    
-    
     <!-- Jquery -->
     <script src="{{ asset('clients/assets/js/jquery-3.6.0.min.js') }}"></script>
     <!-- Bootstrap -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="{{ asset('clients/assets/js/bootstrap.min.js') }}"></script>
     <!-- Appear Js -->
     <script src="{{ asset('clients/assets/js/appear.min.js') }}"></script>
